@@ -2,23 +2,155 @@
 <html lang="en">
 <head>
     <style>
+        @import url("https://fonts.googleapis.com/css?family=Abel");
         *{
             margin: 0px;
             padding: 0px;
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
             
         }
+        body{
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            overflow-y: scroll;
+            overflow-x: hidden;
+        }
+        .container{
+            
+            width: 1000px;
+        }
         header{
+            width: 100%;
             display: flex;
             flex-direction: row;
             justify-content: center;
-            background-color: dodgerblue;
+            background-color: white;
+            border-bottom: 1px solid black;
+            height: 80px;
             
         }
+        .navbar{
+            display: flex;
+            width: 50%;display: flex;
+            justify-content: space-between;
+            align-items: center;
+            width: 100%;
+        }
         header > div{
+            
             background-color:white;
-            padding: 20px;
             margin: 10px;
         }
+        .logo{
+            display: flex;
+            justify-content: center;
+        }
+         header .logo img{
+             display: flex;
+            width: 55px;
+            height: 55px;   
+            padding: 5px; 
+            padding-right: 15px;
+        }
+        .logo-image{
+            display: flex;
+        }
+        .logo-text{
+            margin: 0px;
+            padding:0px;
+            border-left: 1px solid black;
+            padding-left: 10px;
+            display: flex;
+            flex-direction: column;
+            
+        }
+
+        header nav a{
+           
+            text-decoration: none;
+            height: 20px;
+            width: 20px;
+            padding:20px;
+            color:black;
+            font-size: 20px;
+            margin-bottom: 5px;
+        }
+        
+        
+        header nav a:hover{
+            padding-bottom: 10px;
+            border-bottom: 1px solid #dc7171;
+        }
+        header nav a:last-child{
+            border-bottom: 0;
+        }
+        .container .info p{
+            display:flex ;
+            text-align: justify;  
+              
+        }
+        .banner{
+            max-width: 100%;
+        }
+        
+       
+        .info{
+            display: flex;
+            font-size: 20px;
+            flex-direction: column; 
+            color: #8D8B8B;
+            margin: 0px auto;
+          
+        }
+        .info h3{
+            color: #dc7171;
+            align-self:initial;
+            
+        }
+        div .card div{
+            display: flex;
+            
+        }
+        .cardss{
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            padding: 20px;
+        }
+
+        .card-container{
+            
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            margin: 20px;
+            
+           
+           
+        }
+        .card{
+            width: 330px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            border:1px solid #8D8B8B;
+           
+        }
+        .card-logo{
+            height: 40px;
+            padding: 10px;
+        }
+        
+
+
+
+        .cards-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center; }
     </style>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -26,14 +158,97 @@
 </head>
 <body>
     <header class="header">
-        <div style="float: left;width: 50%;">
-        <div></div>
-        <div></div>
-    </div>
-    <div style="width: 50%;"></div>
-    
-        
+        <div class="container">
+           <div class="navbar">
+                <div class="logo"> 
+                    <div class="logo-image">
+                        <img src="images/Logo.png" alt="logo">
+                    </div>
+                        <div class="logo-text">
+                             <b style="font-size: 30px;">Ajwasys</b>Ajwa security systems 
+                        </div>   
+                </div>
+            
+                <div>
+                    <nav>
+                        <a href="/">Home</a>
+                        <a href="/">About Us</a>
+                        <a href="/">Contact Us</a>
+                        <a href="/">Gallery</a>
+                        <a style="background-color:#dc7171 ;padding:15px;" href="/">Get a Quote</a>
+                    </nav>
+                </div>
+            </div>
+        </div>
     </header>
+
+    
+        <div 
+            class="banner" ><img src="images/Slider.png" alt="banner">
+        </div>
+  
+
+    
+    <div class="container">
+        <div class="info">
+            <h3>AJWASYS</h3>
+         <p> Our moto is to secure your business and Life with our branded CCTV Cameras. We act as camera vendors, networking partners and provide  accessories as well. Our ‘Design Tool’ enables customers to get their formal quote. For our customers who specifically require analog solutions we cater to their customised needs and provide them with cameras that do not require MP and analytics. This is about 65% cheaper than an IP solution and you do not have to worry about cables.</p>
+        </div>
+    </div>
+
+    <div>
+        <h3>Services offered</h3>
+    </div>
+
+
+
+<div class="cardss">
+    <div class="cards-container">
+        <div class="card">
+             <div class="card-logo">
+                <img src="images/index.png" alt="sales">
+             </div>
+                <div class="card-title">SALES</div>
+                    <div> <p>We offer you a wide range of cameras including ATEX certified Explosion Proof cameras for zone 1 & zone 2 & also have analog cameras, IP cameras, DVRs, NVRs, Monitors, accessories, cables and more. We are your one-stop solution for all your surveillance needs.</p>
+                    </div>
+        </div>
+        
+    </div>
+    <div class="cards-container">
+        <div class="card">
+             <div class="card-logo">
+                <img src="images/index.png" alt="sales">
+             </div>
+                <div class="card-title">SALES</div>
+                    <div> <p>We offer you a wide range of cameras including ATEX certified Explosion Proof cameras for zone 1 & zone 2 & also have analog cameras, IP cameras, DVRs, NVRs, Monitors, accessories, cables and more. We are your one-stop solution for all your surveillance needs.</p>
+                    </div>
+        </div>
+        
+    </div>
+    <div class="cards-container">
+        <div class="card">
+             <div class="card-logo">
+                <img src="images/index.png" alt="sales">
+             </div>
+                <div class="card-title">SALES</div>
+                    <div> <p>We offer you a wide range of cameras including ATEX certified Explosion Proof cameras for zone 1 & zone 2 & also have analog cameras, IP cameras, DVRs, NVRs, Monitors, accessories, cables and more. We are your one-stop solution for all your surveillance needs.</p>
+                    </div>
+        </div>
+        
+    </div>
+    
+</div>
+
+
+<div class="cards-container">
+    <div class="card"><img alt="sales" src="./assets/sales.png" />
+    <div class="desc">
+    <div class="title">Sales</div>
+    
+    <p>We offer you a wide range of cameras including ATEX certified Explosion Proof cameras for zone 1 & zone 2 & also have analog cameras, IP cameras, DVRs, NVRs, Monitors, accessories, cables and more. We are your one-stop solution for all your surveillance needs.</p>
+    </div>
+    </div>
+    
 
 </body>
 </html>
