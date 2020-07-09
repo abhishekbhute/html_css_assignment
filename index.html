@@ -22,6 +22,7 @@
             width: 1000px;
         }
         header{
+            position: relative;
             width: 100%;
             display: flex;
             flex-direction: row;
@@ -34,7 +35,6 @@
         .navbar{
             display: flex;
             width: 50%;
-            display: flex;
             justify-content: space-between;
             align-items: center;
             width: 100%;
@@ -118,14 +118,14 @@
         }
         .card {
             width:33%;
+            height: 300px;
             display: flex;
-            
             flex-direction: column;
-            justify-content: space-between;
             align-items: center;
             border: 1px solid #8D8B8B;
             padding: 10px;
-            margin: 20px;
+            margin: 10px;
+           
             
 
 
@@ -143,12 +143,12 @@
         }
 
         .card1{
-            width:25%;
+            width:26%;
             display: flex;
             flex-direction: column;
             align-items: center;
             border: 1px solid #8D8B8B;
-            padding: 20px;
+            padding: 10px;
             margin: 10px;
             height: auto;
         }
@@ -161,9 +161,50 @@
        .read-more a:hover{
            border-bottom: 1px solid black;
        }
-       
-    
-        
+
+       .product-container{
+            width: 100%;
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+        }
+       .products{
+             width:33%;
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            align-items: center;
+            
+            
+       }
+       .products img {
+            width: 300px;
+            height: 300px;
+       }
+        footer{
+            width: 100%;
+            
+        }
+        footer nav {
+            background: #525252;
+            padding: 15px 0;
+            text-align: center;
+            color: #c4c4c4; 
+            }
+      footer nav a {
+          color: white;
+           text-align: center;
+           text-decoration: none;
+           font-size: 18px;
+       }
+       footer nav a:hover{
+           color: #dc7171;
+       }
+       footer  p {
+           text-align: center;
+           padding: 10px 0px;
+       }
     </style>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -310,7 +351,7 @@
                 <div class="card-para">
                     <p>
                         All kinds of Intercom systems PBX Systems, Door Phones. with installation by experienced professional technicians                    </p>
-                </div>
+                </div> 
                      <div class="read-more">
                             <a href="#">Read more..</a>
                     </div>
@@ -336,7 +377,57 @@
     </div>
 </div>
 
-    
+        <div style="color: #dc7171;font-size: 28px;">
+                <h3>We deal in</h3>
+        </div>
 
+        <div class="container">
+            <div class="product-container">
+                <div class="products">
+                    <div>
+                        <img style="min-width: 100%;max-width: 100%;" src="images/product1.png" alt="SALES">
+                    </div>
+                 </div>
+
+                 <div class="products">
+                    <div>
+                        <img  src="images/product2.png" alt="SALES">
+                    </div>
+                 </div>
+                 <div class="products">
+                    <div>
+                        <img  src="images/product3.png" alt="SALES">
+                    </div>
+                 </div>
+                 <div class="products">
+                    <div>
+                        <img  src="images/product2.png" alt="SALES">
+                    </div>
+                 </div>
+                 <div class="products">
+                    <div>
+                        <img  src="images/product5.png" alt="SALES">
+                    </div>
+                 </div>
+                 <div class="products">
+                    <div>
+                        <img  src="images/product6.png" alt="SALES">
+                    </div>
+                 </div>
+            </div>
+        </div>
+
+        <footer>
+            
+            <nav>
+                <a href="">Home</a>|
+                <a href="">About Us</a>|
+                <a href="">Contact US</a>|
+                <a href="">Get Quote</a>|
+                <a href="">Gallery</a>
+            </nav>
+            <p>Copyrights reserved, 2019 | Ajwasys</p>
+      
+        
 </body>
 </html>
