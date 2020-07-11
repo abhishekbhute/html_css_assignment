@@ -10,6 +10,7 @@
             font-weight: 400;
         }
         body{
+        
             width: 100%;
             display: flex;
             flex-direction: column;
@@ -29,19 +30,21 @@
             flex-direction: row;
             justify-content: center;
             background-color: white;
-            border-bottom: 2px solid black;
             height: 50px;
-            padding: 10px;
+        
             margin-bottom: 10px;
             
             
         }
+       
         .navbar{
+            padding: 10px;
             display: flex;
             width: 50%;
             justify-content: space-between;
             align-items: center;
             width: 100%;
+            
         }
         header > div{
             
@@ -113,6 +116,26 @@
             background: white;
            
         }
+        .dropdown{
+            position: relative;
+            
+        }
+        .dropdown-cnt{
+            display: none;
+            position: absolute;
+            background-color: #dc7171 ;
+            max-width: 80px;
+            z-index: 10;
+            padding: 12px 15px;
+
+        }
+        .dropdown-cnt a{
+            display: block;
+        }
+        .dropdown:hover .dropdown-cnt {
+            display: block;
+            color: red;
+        }
         .container .info p{
             display:flex ;
             text-align: justify;  
@@ -165,9 +188,11 @@
 
         }
         .card-para{
+            background-color:#f5f5f5 ;
             font-size: 18px;
             line-height: 25px;
             color: #8D8B8B;
+            text-align: justify;
         }
 
         .card1{
@@ -233,6 +258,8 @@
        footer  p {
            text-align: center;
            padding: 10px 0px;
+           font-size: 12px;
+           color: #525252;
        }
     </style>
     <meta charset="UTF-8">
@@ -258,7 +285,11 @@
                             <div>
                                 <nav>
                                     <a class="active" href="/">Home</a>
-                                    <a href="/">About Us</a>
+                                    <a href="/" class="dropdown" >About Us</a>
+                                    <div class="dropdown-cnt">
+                                        <a href="">Facebook</a>
+                                        <a href="">Instagram</a>
+                                    </div>
                                     <a href="/">Contact Us</a>
                                     <a href="/">Gallery</a>
                                     <a style="background-color:#dc7171 ;padding:15px;color: white;" href="/">Get a Quote</a>
@@ -278,7 +309,7 @@
     
     <div class="container">
         <div class="info">
-            <h3>AJWASYS</h3>
+            <h3 style="font-size: 38px;margin-bottom: 15px;margin-top: 15px;">AJWASYS</h3>
          <p> Our moto is to secure your business and Life with our branded CCTV Cameras. We act as camera vendors, networking partners and provide  accessories as well. Our ‘Design Tool’ enables customers to get their formal quote. For our customers who specifically require analog solutions we cater to their customised needs and provide them with cameras that do not require MP and analytics. This is about 65% cheaper than an IP solution and you do not have to worry about cables.</p>
         </div>
     </div>
@@ -459,7 +490,7 @@
                 <a href="">Get Quote</a>|
                 <a href="">Gallery</a>
             </nav>
-            <p style="color: #525252;font-size: 15px;">Copyrights reserved, 2019 | Ajwasys</p>
+            <p>Copyrights reserved, 2019 | Ajwasys</p>
       
         
 </body>
