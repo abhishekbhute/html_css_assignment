@@ -30,7 +30,7 @@
             flex-direction: row;
             justify-content: center;
             background-color: white;
-            height: 50px;
+            
         
             margin-bottom: 10px;
             
@@ -38,6 +38,7 @@
         }
        
         .navbar{
+            height: 55px;
             padding: 10px;
             display: flex;
             width: 50%;
@@ -52,6 +53,7 @@
             margin: 10px;
         }
         .logo{
+            margin-right: 200px;
             display: flex;
             justify-content: center;
         }
@@ -68,9 +70,10 @@
         .logo-text{
             display: flex;
             justify-content: center;
-            margin: 0px;
+            margin-top: 10px;
+            margin-bottom: 10px;
             padding:0px;
-            border-left: 2px solid #dc7171 ;
+            border-left: 1.5px solid #dc7171 ;
             padding-left: 10px;
             display: flex;
             flex-direction: column;
@@ -89,14 +92,14 @@
             margin-bottom: 5px;
             color: #525252;
         }
-        header nav a.active{
+        header .navbar a.active{
             border-bottom-color: #dc7171;
 
         } 
         
         
-        header nav a:hover{
-            padding-bottom: 10px;
+        header .navbar > a:hover{
+            
             border-bottom: 2px solid #dc7171;
         }
         
@@ -116,26 +119,47 @@
             background: white;
            
         }
-        .dropdown{
-            position: relative;
+        div .navbar > a{
+            text-decoration: none;
+            color: #525252;
+            font-size: 20px;
+            padding: 0px;
+        }
+        .dropdown-content {
             
-        }
-        .dropdown-cnt{
-            display: none;
-            position: absolute;
-            background-color: #dc7171 ;
-            max-width: 80px;
-            z-index: 10;
-            padding: 12px 15px;
+             display: none;
+             position: absolute;
+             
+             background-color: #f9f9f9;
+             min-width: 160px;
+             box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+             z-index: 1;
+             }
+        .dropdown-content > a {
+            float: none;
+            font-size: 18px;
+            color: #525252;
+            padding: 12px 16px;
+            text-decoration: none;
+            display: block;
+            text-align: left;
+            }
+            .dropdown-content  a:hover {
+                background-color:#ddd;
+            }
+            .dropbtn { 
+                text-decoration: none;
+                color: #525252;
+                font-size: 20px;
+                padding: 0px;
+                
+            }
 
-        }
-        .dropdown-cnt a{
+        .dropdown:hover .dropdown-content {
             display: block;
-        }
-        .dropdown:hover .dropdown-cnt {
-            display: block;
-            color: red;
-        }
+                }
+        
+        
         .container .info p{
             display:flex ;
             text-align: justify;  
@@ -281,20 +305,26 @@
                                                                      <p style="color:#c4c4c4">Ajwa security systems</p>
                                      </div>   
                             </div>
-                    
-                            <div>
-                                <nav>
-                                    <a class="active" href="/">Home</a>
-                                    <a href="/" class="dropdown" >About Us</a>
-                                    <div class="dropdown-cnt">
-                                        <a href="">Facebook</a>
-                                        <a href="">Instagram</a>
-                                    </div>
-                                    <a href="/">Contact Us</a>
-                                    <a href="/">Gallery</a>
-                                    <a style="background-color:#dc7171 ;padding:15px;color: white;" href="/">Get a Quote</a>
-                                </nav>
+
+
+                            
+                            <a href="">Home</a>
+                            <a href="">About Us</a>
+                            <div class="dropdown">
+                                <a class="dropbtn">Contact US</a>
+                                <div class="dropdown-content">
+                                    <a href="">3232</a>
+                                    <a href="">3232</a>
+                                    <a href="">3232</a>
+                                </div>
                             </div>
+                            <a href="">Gallery</a>
+                            <a style="background-color:#dc7171 ;padding:15px;color: white;" href="">Get a Quote</a>
+
+                           
+                    
+                            
+                            
                     </div>
             </div>
         </div>
